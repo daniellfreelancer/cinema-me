@@ -4,14 +4,12 @@ async function traerPeliculas(){
     const api = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=772c6935b7a9437236ddd7d87bbf941d&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate')
     const data = await api.json()
     const discover = data.results
-    console.log(discover)
 
     const api2 = await fetch("https://api.themoviedb.org/3/trending/all/day?api_key=772c6935b7a9437236ddd7d87bbf941d")
     const data2 = await api2.json()
     const trending = data2.results
-    console.log(trending)
-    crearCardsPelis(discover,"card-container")
-    crearCardsPelis(trending,"card-container2")
+    //crearCardsPelis(discover,"card-container")
+   //crearCardsPelis(trending,"card-container2")
 
 }
 
