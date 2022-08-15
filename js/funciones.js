@@ -30,7 +30,7 @@ let movie3 = {
     nombre:"jurassic world",
     genero:"ciencia ficcion",
     poster: "https://image.tmdb.org/t/p/w500/sXeWfpT1EhG7f4uBouqraOhmouH.jpg",
-    lanzamiento: 2022,
+    lanzamiento: 2020,
     votacion: 7.1,
     id: "003"
 }
@@ -62,14 +62,10 @@ return `<div id=${obj.id} class="card" style="width: 18rem;">
 
 }
 
-function printOnHtml(id, obj){
+function printOnHtml(div, obj){
     let print = template(obj)
-    let container =    document.getElementById(`${id}`)
+    let container =    document.getElementById(`${div}`)
     container.innerHTML += print // acumulo a traves del += para no reagsinar
   //  document.querySelector(`#${id}`).innerHTML = template(obj)
 }
 
-printOnHtml('todos',movie1)
-printOnHtml('todos',movie2)
-printOnHtml('todos',movie3)
-printOnHtml('todos',movie4)
