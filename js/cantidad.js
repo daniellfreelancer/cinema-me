@@ -1,8 +1,13 @@
 let cantidad = -1
+const titleWeb = document.title
 
-while ( cantidad < 0 || isNaN(cantidad)){
-    cantidad =  parseInt(prompt("ingresa la cantidad de peliculas a listar en favoritos"))
+if (titleWeb == "Peliculas Usuario"){
+    while ( cantidad < 0 || isNaN(cantidad)){
+        cantidad =  parseInt(prompt("ingresa la cantidad de peliculas a listar en favoritos"))
+    }
 }
+
+
 
 if(cantidad === 0) {
     alert("Gracias por su visita")
@@ -43,6 +48,6 @@ if (cantidad > 0){
     }
 }
 
-console.log(peliculasArray)
+
 
 
