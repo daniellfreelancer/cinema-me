@@ -1,0 +1,55 @@
+/* Color Theme Swatches in Hex
+.3D-gold-text-grand-opening.-1-hex { color: #F2E641; }
+.3D-gold-text-grand-opening.-2-hex { color: #F2C335; }
+.3D-gold-text-grand-opening.-3-hex { color: #F28E13; }
+.3D-gold-text-grand-opening.-4-hex { color: #BF6415; }
+.3D-gold-text-grand-opening.-5-hex { color: #732002; }
+
+#343434 footer
+
+font-family: 'Josefin Sans', sans-serif;
+regular 400 / bold 700
+ */
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    width: 14rem;
+}
+.bi-person-circle{
+    color: #F28E13;
+}
+
+.text-nav{
+    color:#F28E13;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.text-nav:hover{
+    color: #BF6415;
+}
+
+.footer-cinema{
+    background-color: #343434;
+}
+
+.text-promo{
+    color:#F28E13;
+    font-size: 2rem;
+    font-weight: 700;
+}
+main {
+    min-height: 50vh;
+}
+
+.icon-burger{
+    background-color: #F28E13;
+}
+
+
+.border-trending{
+    border-top: 1px solid #F28E13 !important;
+    border-bottom: 1px solid #F28E13 !important;
+}
