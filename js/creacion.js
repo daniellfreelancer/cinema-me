@@ -19,9 +19,10 @@ function createMovies() {
     }
     if (cantidad > 0) {
         validData()
-        renderEach("todos", peliculasArray)
-        renderFilter("nuevos",peliculasArray)
+
     }
+    renderEach("todos", peliculasUser)
+    renderFilter("nuevos",peliculasUser)
 
     return peliculasArray
 
@@ -59,6 +60,9 @@ function validData() {
         console.log(pelicula)
 
         peliculasArray.push(pelicula)
+        peliculasUser.push(pelicula)
+        localStorage.setItem("moviesUser", JSON.stringify(peliculasUser))
+        console.log(peliculasUser)
     }
 }
 
