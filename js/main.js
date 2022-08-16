@@ -11,6 +11,7 @@ async function traerPeliculas(){
     //crearCardsPelis(discover,"card-container")
    //crearCardsPelis(trending,"card-container2")
 
+
 }
 
 traerPeliculas()
