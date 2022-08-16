@@ -3,7 +3,8 @@
 //     nombre: nombre,
 //     genero: genero,
 //     poster: poster,
-//     lanzamiento: year
+//     lanzamiento: year,
+
 // }
 
 
@@ -13,7 +14,8 @@ let movie1 = {
     poster: "https://image.tmdb.org/t/p/w500/sNAMqQ9T7YnXnvUSufeWzaRgK6Y.jpg",
     lanzamiento: 2022,
     votacion: 8.2,
-    id: "001"
+    id: "001",
+    descripcion: "Soy una descripcion 1"
 
 }
 
@@ -23,7 +25,8 @@ let movie2 = {
     poster: "https://image.tmdb.org/t/p/w500/ehSQcx7fYCRe92FPRdOjVjlgM3W.jpg",
     lanzamiento: 2020,
     votacion: 6.8,
-    id: "002"
+    id: "002",
+    descripcion: "Soy una descripcion 2"
 }
 
 let movie3 = {
@@ -32,15 +35,18 @@ let movie3 = {
     poster: "https://image.tmdb.org/t/p/w500/sXeWfpT1EhG7f4uBouqraOhmouH.jpg",
     lanzamiento: 2020,
     votacion: 7.1,
-    id: "003"
+    id: "003",
+    descripcion: "Soy una descripcion 3"
 }
+
 let movie4 = {
     nombre:"top gun: 'Maverick'",
     genero:"accion",
     poster: "https://image.tmdb.org/t/p/w500/AlWpEpQq0RgZIXVHAHZtFhEvRgd.jpg",
     lanzamiento: 2022,
     votacion:8.3,
-    id: "004"
+    id: "004",
+    descripcion: "Soy una descripcion 4"
 }
 
 
@@ -48,13 +54,15 @@ let movie4 = {
 
 
 function template(obj){
-let nombreCorrecto = obj.nombre.charAt(0).toUpperCase()+obj.nombre.slice(1).toLowerCase() ;
-let genero = obj.genero.charAt(0).toUpperCase()+obj.genero.slice(1).toLowerCase() ;
+//let nombreCorrecto = obj.nombre.charAt(0).toUpperCase()+obj.nombre.slice(1).toLowerCase()
+
+//let genero = obj.genero.charAt(0).toUpperCase()+obj.genero.slice(1).toLowerCase()
+
 return `<div id=${obj.id} class="card" style="width: 18rem;">
             <img src="${obj.poster}" class="card-img-top" alt="${obj.poster}">
             <div class="card-body">
-                <p class="card-text">Titulo: ${nombreCorrecto}</p>
-                <p class="card-text">Genero: ${genero}</p>
+                <p class="card-text">Titulo: ${obj.nombre}</p>
+                <p class="card-text">Genero: ${obj.genero}</p>
                 <p class="card-text">Votos: ${obj.votacion}</p>
                 <p class="card-text">Lanzamiento: ${obj.lanzamiento}</p>
             </div>
